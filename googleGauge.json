@@ -5,7 +5,7 @@
 	"description": "A Google Gauge box",
 	"newInstancePrefix": "googleGauge",
 	"icon": "https://phomble.github.io/agauge/googleGauge.png",
-	"vendor": "SAP",
+	"vendor": "I521939",
 	"eula": "",
 	"license": "",
 	"webcomponents": [
