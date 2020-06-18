@@ -4,7 +4,7 @@
 	"name": "Google Gauge Box",
 	"description": "A Google Gauge",
 	"newInstancePrefix": "googleGauge",
-	"icon": "https://phomble.github.io/googleGauge/googleGauge.png",
+	"icon": "https://phomble.github.io/googleGauge/icon.png",
 	"vendor": "I521939",
 	"eula": "",
 	"license": "",
