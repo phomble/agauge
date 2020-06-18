@@ -1,8 +1,8 @@
 {
 	"id": "com.sap.sample.googleGauge",
 	"version": "1.0.0",
-	"name": "Google Gauge Box",
-	"description": "A Google Gauge",
+	"name": "Google Gauge",
+	"description": "Google Gauge",
 	"newInstancePrefix": "googleGauge",
 	"icon": "https://phomble.github.io/googleGauge/icon.png",
 	"vendor": "I521939",
