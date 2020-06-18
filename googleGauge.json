@@ -2,9 +2,9 @@
 	"id": "com.sap.sample.googleGauge",
 	"version": "1.0.0",
 	"name": "Google Gauge Box",
-	"description": "A Google Gauge box",
+	"description": "A Google Gauge",
 	"newInstancePrefix": "googleGauge",
-	"icon": "https://phomble.github.io/agauge/googleGauge.png",
+	"icon": "https://phomble.github.io/googleGauge/googleGauge.png",
 	"vendor": "I521939",
 	"eula": "",
 	"license": "",
@@ -12,7 +12,7 @@
 		{
 			"kind": "main",
 			"tag": "com-sap-sample-google",
-			"url": "https://phomble.github.io/agauge/googleGauge.js",
+			"url": "https://phomble.github.io/googleGauge/googleGauge.js",
 			"integrity": "",
 			"ignoreIntegrity": true
 		}
