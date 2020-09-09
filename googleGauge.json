@@ -24,7 +24,7 @@
 			"default": "Label"
 		},
 		"value": {
-			"type": "integer",
+			"type": "number",
 			"description": "value",
 			"default": 10
 		}
@@ -35,14 +35,14 @@
 			"parameters": [
 				{
 					"name": "newValue",
-					"type": "integer",
+					"type": "number",
 					"description": "The new gauge value."
 				}
 			],
 			"body": "this.value = newValue;"
 		},
 		"getValue": {
-			"returnType": "integer",
+			"returnType": "number",
 			"description": "Returns the gauge value",
 			"body": "return this.value;"
 		},
