@@ -27,6 +27,16 @@
 			"type": "number",
 			"description": "value",
 			"default": 10
+		},
+		"redto": {
+			"type": "number",
+			"description": "value",
+			"default": 0
+		},
+		"redfrom": {
+			"type": "number",
+			"description": "value",
+			"default": 0
 		}
 	},
 	"methods": {
@@ -40,6 +50,23 @@
 				}
 			],
 			"body": "this.value = newValue;"
+		},
+		"setRed": {
+			"description": "Sets the gauge value.",
+			
+			"parameters": [
+				{
+					"name": "newrLowLim",
+					"type": "number",
+					"description": "Gauge Red start value"
+				},
+				{
+					"name": "newrHiLim",
+					"type": "number",
+					"description": "Gauge Red end value"
+				}
+			],
+			"body": "this.redto = newrLowLim; this.redfrom = newrHiLim;"
 		},
 		"getValue": {
 			"returnType": "number",
