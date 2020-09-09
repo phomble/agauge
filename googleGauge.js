@@ -381,6 +381,7 @@
 				]);
 
 				var options = {
+					redFrom: 90, redTo: 100,
 				chartArea: {
 					// leave room for y-axis labels
 					width: '94%'
@@ -389,7 +390,7 @@
 					position: 'top'
 					},
 					width: '100%',
-				redFrom: props.redFrom, redTo: props.redTo,
+				
 				yellowFrom:props.yellowFrom, yellowTo: props.yellowTo,
 				minorTicks: 5
 				};
