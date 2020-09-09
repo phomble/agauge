@@ -381,7 +381,7 @@
 				]);
 
 				var options = {
-					redFrom: 90,redTo: 100,
+					redFrom: 0, redTo: 4, max: 20, yellowFrom:4, yellowTo: 8, GreenFrom:8, GreenTo: 20,
 				chartArea: {
 					// leave room for y-axis labels
 					width: '94%'
@@ -390,7 +390,8 @@
 					position: 'top'
 					},
 					width: '100%',
-				 yellowFrom:props.yellowFrom, yellowTo: props.yellowTo,
+				
+				
 				minorTicks: 5
 				};
 
