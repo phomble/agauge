@@ -389,8 +389,7 @@
 					position: 'top'
 					},
 					width: '100%',
-				redFrom: props.redFrom, redTo: props.redTo,
-				yellowFrom:props.yellowFrom, yellowTo: props.yellowTo,
+				redFrom: 90,redTo: 100, yellowFrom:props.yellowFrom, yellowTo: props.yellowTo,
 				minorTicks: 5
 				};
 
