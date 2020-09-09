@@ -392,7 +392,7 @@
 					width: '100%',
 				
 				
-				minorTicks: 5, majorTicks: 5
+				
 				};
 
 				var chart = new google.visualization.Gauge(ctx);
