@@ -28,12 +28,17 @@
 			"description": "value",
 			"default": 10
 		},
-		"redto": {
+		"gaugemax": {
+			"type": "number",
+			"description": "value",
+			"default": 100
+		},
+		"redmax": {
 			"type": "number",
 			"description": "value",
 			"default": 0
 		},
-		"redfrom": {
+		"redstart": {
 			"type": "number",
 			"description": "value",
 			"default": 0
@@ -51,6 +56,17 @@
 			],
 			"body": "this.value = newValue;"
 		},
+		"setMaxGaugeValue": {
+			"description": "Sets the gauge value.",
+			"parameters": [
+				{
+					"name": "newValue",
+					"type": "number",
+					"description": "The new gauge value."
+				}
+			],
+			"body": "this.gaugemax = newValue;"
+		},
 		"setRed": {
 			"description": "Sets the gauge value.",
 			
@@ -66,7 +82,7 @@
 					"description": "Gauge Red end value"
 				}
 			],
-			"body": "this.redto = newrHiLim; this.redfrom = newrLowLim;"
+			"body": "this.redstart = newrLowLim; this.redmax = newrHiLim; "
 		},
 		"getValue": {
 			"returnType": "number",
