@@ -384,6 +384,11 @@
 					redFrom: props.redstart, redTo: props.redmax,
 					 max: props.gaugemax, yellowFrom: props.yellowstart, yellowTo: props.yellowmax, 
 					 greenFrom: props.greenstart, greenTo: props.greenmax,
+					 width: 400,
+					 height: 400,
+					 animation:{
+					   duration: 1000,
+					   easing: 'out',
 				chartArea: {
 					// leave room for y-axis labels
 					width: '94%'
