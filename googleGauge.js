@@ -388,7 +388,7 @@
 					 height: 400,
 					 animation:{
 					   duration: 1000,
-					   easing: 'out',
+					   easing: 'out'},
 				chartArea: {
 					// leave room for y-axis labels
 					width: '94%'
