@@ -382,7 +382,7 @@
 
 				var options = {
 					redFrom: props.redstart, redTo: props.redmax,
-					 max: props.gaugemax, yellowFrom:4, yellowTo: 8, greenFrom:8, greenTo: 20,
+					 max: props.gaugemax, yellowFrom: props.yellowstart, yellowTo: props.yellowmax, greenFrom: props.greenstart, greenTo: props.greenmax,
 				chartArea: {
 					// leave room for y-axis labels
 					width: '94%'

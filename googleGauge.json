@@ -42,6 +42,26 @@
 			"type": "number",
 			"description": "value",
 			"default": 0
+		},
+		"yellowmax": {
+			"type": "number",
+			"description": "value",
+			"default": 0
+		},
+		"yellowstart": {
+			"type": "number",
+			"description": "value",
+			"default": 0
+		},
+		"greenmax": {
+			"type": "number",
+			"description": "value",
+			"default": 0
+		},
+		"greenstart": {
+			"type": "number",
+			"description": "value",
+			"default": 0
 		}
 	},
 	"methods": {
@@ -83,6 +103,40 @@
 				}
 			],
 			"body": "this.redstart = newrLowLim; this.redmax = newrHiLim; "
+		},
+		"setYellow": {
+			"description": "Sets the gauge value.",
+			
+			"parameters": [
+				{
+					"name": "newrLowLim",
+					"type": "number",
+					"description": "Gauge Yellow start value"
+				},
+				{
+					"name": "newrHiLim",
+					"type": "number",
+					"description": "Gauge Yellow end value"
+				}
+			],
+			"body": "this.yellowstart = newrLowLim; this.yellowmax = newrHiLim; "
+		},
+		"setGreen": {
+			"description": "Sets the gauge value.",
+			
+			"parameters": [
+				{
+					"name": "newrLowLim",
+					"type": "number",
+					"description": "Gauge Green start value"
+				},
+				{
+					"name": "newrHiLim",
+					"type": "number",
+					"description": "Gauge Green end value"
+				}
+			],
+			"body": "this.greenstart = newrLowLim; this.greenmax = newrHiLim; "
 		},
 		"getValue": {
 			"returnType": "number",
