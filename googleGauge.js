@@ -379,12 +379,43 @@
 				['Label', 'Value'],
 				[props.label, props.value]
 				]);
+				var mT1
+				var mT2
+				var mT3
+				var mT4
+				var mT5
+				
 
+				console.log("tick1 b4 = ", props.majortick1);
+				if (props.majortick1 === "0") {
+					
+				
+					if (props.gaugemin >0){
+						mT1 =props.gaugemin
+					
+					}else{
+						mT1 =props.majortick1
+					}
+						mT2 =(props.gaugemax - props.gaugemin) *.25 + props.gaugemin
+						mT3 =(props.gaugemax - props.gaugemin) *.5 + props.gaugemin
+						mT4 =(props.gaugemax - props.gaugemin) *.75 + props.gaugemin
+						mT5 = props.gaugemax
+					
+				}else{
+					mT1=props.majortick1
+					mT2=props.majortick2
+					mT3=props.majortick3
+					mT4=props.majortick4
+					mT5=props.majortick5
+					props.majortick1 = "0";
+				}
+				
 				var options = {
 					redFrom: props.redstart, redTo: props.redmax,
-					 max: props.gaugemax, yellowFrom: props.yellowstart, yellowTo: props.yellowmax, 
-					 greenFrom: props.greenstart, greenTo: props.greenmax,
-				chartArea: {
+					 max: props.gaugemax,  min: props.gaugemin, yellowFrom: props.yellowstart, yellowTo: props.yellowmax, 
+					 greenFrom: props.greenstart, greenTo: props.greenmax, majorTicks: [mT1, mT2, mT3, mT4, mT5 ],
+					 
+					 chartArea: {
 					// leave room for y-axis labels
 					width: '94%'
 					},
@@ -392,14 +423,13 @@
 					position: 'top'
 					},
 					width: '100%',
-				
-				
-				
+					
 				};
-
+				
 				var chart = new google.visualization.Gauge(ctx);
 
 				chart.draw(data, options);
+				
 			}
 		}
 	}

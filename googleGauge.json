@@ -33,6 +33,11 @@
 			"description": "value",
 			"default": 100
 		},
+		"gaugemin": {
+			"type": "number",
+			"description": "value",
+			"default": 0
+		},
 		"redmax": {
 			"type": "number",
 			"description": "value",
@@ -62,6 +67,31 @@
 			"type": "number",
 			"description": "value",
 			"default": 0
+		},
+		"majortick1": {
+			"type": "string",
+			"description": "value",
+			"default": "0"
+		},
+		"majortick2": {
+			"type": "string",
+			"description": "value",
+			"default": "25"
+		},
+		"majortick3": {
+			"type": "string",
+			"description": "value",
+			"default": "50"
+		},
+		"majortick4": {
+			"type": "string",
+			"description": "value",
+			"default": "75"
+		},
+		"majortick5": {
+			"type": "string",
+			"description": "value",
+			"default": "100"
 		}
 	},
 	"methods": {
@@ -76,16 +106,54 @@
 			],
 			"body": "this.value = newValue;"
 		},
-		"setMaxGaugeValue": {
+		"setMinMaxGaugeValue": {
 			"description": "Sets the gauge value.",
 			"parameters": [
 				{
-					"name": "newValue",
+					"name": "newMinValue",
 					"type": "number",
-					"description": "The new gauge value."
+					"description": "The new gauge min value."
+				},
+				{
+					"name": "newMaxValue",
+					"type": "number",
+					"description": "The new gauge max value."
 				}
 			],
-			"body": "this.gaugemax = newValue;"
+			"body": "this.gaugemin = newMinValue; this.gaugemax = newMaxValue; "
+		},
+		"setMMajorticks": {
+			"description": "Sets the gauge ticks.",
+			"parameters": [
+				{
+					"name": "newOne",
+					"type": "string",
+					"description": "Tick value One."
+				},
+				{
+					"name": "newTwo",
+					"type": "string",
+					"description": "Tick value Two."
+				},
+				{
+					"name": "newThree",
+					"type": "string",
+					"description": "Tick value Three."
+				},
+				{
+					"name": "newFour",
+					"type": "string",
+					"description": "Tick value Four."
+				},
+				{
+					"name": "newFive",
+					"type": "string",
+					"description": "Tick value Five."
+				}
+
+
+			],
+			"body": "this.majortick1 = newOne; this.majortick2 = newTwo; this.majortick3 = newThree; this.majortick4 = newFour; this.majortick5 = newFive;" 
 		},
 		"setRed": {
 			"description": "Sets the gauge value.",
